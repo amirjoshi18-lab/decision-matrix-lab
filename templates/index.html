@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Decision Matrix Lab</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen">
+
+    <header class="border-b border-slate-200 bg-white px-6 py-4 sticky top-0 z-50 shadow-xs">
+        <div class="max-w-[1600px] mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="h-3 w-3 rounded-full bg-blue-600"></div>
+                <h1 class="text-sm font-bold tracking-wider text-slate-900 uppercase">Weighted Objective Chart Hub</h1>
+            </div>
+            <div id="weightCounter" class="bg-slate-100 border border-slate-200 px-4 py-1 rounded-full text-xs font-mono text-slate-600">
+                Sum of Weights Matrix: 0.00 / 1.0
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-[1600px] mx-auto p-6 grid grid-cols-1 xl:grid-cols-4 gap-8">
+        
+        <div class="xl:col-span-3 space-y-6">
+            
+            <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-xs">
+                <h2 class="text-xs font-bold tracking-wider text-blue-600 uppercase mb-3">01. Enterprise Configuration Profile</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-[10px] text-slate-400 font-mono uppercase mb-1">Target Company Name</label>
+                        <input type="text" id="companyNameInput" value="Starlight Tech Inc." class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:border-blue-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] text-slate-400 font-mono uppercase mb-1">Team Members' Names</label>
 
